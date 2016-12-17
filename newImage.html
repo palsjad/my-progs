@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+<head>
+
+
+</head>
+
+<body>
+<canvas id = "c" width = "600" height = "600" style="border:1px solid #000000"> </canvas>
+<script>
+    var c= document.querySelector("#c");
+	var ctx = c.getContext("2d");
+	 
+	
+	  // now draw the traingle inside the ablve square
+	  
+	   ctx.strokeStyle = "pink"; 	
+	  
+	   ctx.strokeRect(100,100,400,400);
+	   
+	   ctx.beginPath();
+	   ctx.moveTo(400,200);
+       ctx.lineTo(400,400);
+	   ctx.lineTo(200,400);
+	    
+       ctx.fillStyle="purple";
+	   ctx.fill();
+	   
+	     
+ 
+	   ctx.font = "36pt impact";
+	   ctx.textAlign = "center";
+	   ctx.fillStyle="white";
+	   ctx.strokeText("RECTANGLE", c.width / 2 , 90);
+		
+		
+	   ctx.strokeStyle="green";
+       ctx.lineWidth = 3;
+	   ctx.strokeText("RECTANGLE", c.width / 2 , 90);
+		
+		ctx.font = "36pt impact";
+		ctx.textAlign = "center";
+	    ctx.fillStyle="white";
+	    ctx.fillText("TRAINGLE", c.width / 2, 490);
+		
+		ctx.strokeStyle="green";
+		ctx.lineWidth = 3;
+	    ctx.strokeText("TRAINGLE", c.width / 2, 490);
+	    //   ctx.strokeText("TRAINGLE", 180,590);
+
+	   
+		//another way to make a rectangle 
+		//ctx.fillRect(350,350,350,350);
+		//ctx.strokeRect(350,350,350,350);
+		
+	 
+	
+	
+ 
+
+</script>
+
+</body>
+
+</html>
+
